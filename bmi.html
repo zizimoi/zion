@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="icon" href="download-removebg-preview (1).png" type="image/svg+xml">
+  <style>
+
+    h1 {
+      font-family: Poppins, sans-serif;
+      color: #ffffff;}
+
+    
+    body {
+      font-family: Poppins, sans-serif;
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: rgba(5, 43, 255, 0.5);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 1px 5px 15px rgba(24, 125, 156, 0.877);
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin: 5px 0;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background: #527ba7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      color: #527ba7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <br>
+    <input type="number" id="height" placeholder="Height (m)">
+    <br>
+    <button onclick="calculateBMI()">Calculate</button>
+    <h2 id="result"></h2>
+  </div>
+</body>
+    <script>
+      function calculateBMI() {
+        let weight = parseFloat(document.getElementById('weight').value);
+        let height = parseFloat(document.getElementById('height').value);
+        if (weight > 0 && height > 0) {
+          let bmi = weight / (height * height);
+          document.getElementById('result').innerText = 'Your BMI is ' + bmi.toFixed(2);
+        } else {
+          document.getElementById('result').innerText = 'Please enter valid weight and height.'; }
+        }
+
+    </script>

@@ -1,0 +1,65 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    background-color: black;
+    padding: 2em;
+   margin: 0;
+  box-sizing: border-box;
+}
+
+nav a{
+color: rgb(255, 94, 0);
+text-decoration: none;
+ margin-right: 5em;
+font-family: 'Raleway', sans-serif;
+}
+
+header{
+  
+    text-align: center;
+    background-color: rgb(255, 81, 0);
+    opacity: 90%;
+    padding: 2em;
+}
+
+
+
+section{
+    text-align: center;
+    background-color: rgb(247, 225, 204);
+    padding: 2em;
+    margin-left: 0%;
+}
+.hedsect{
+    background-color: rgb(202, 211, 154);
+}
+ section h1{
+  align-items: top;
+   background-color: black;
+    color: rgb(230, 108, 27);
+    padding: 2em;
+    margin: 0%;
+ }
+
+ section h3{
+    background-color: rgb(0, 0, 0);
+    color:rgb(230, 108, 27);
+    padding: 2em;
+ }
+
+ .Teams{
+justify-content: wrap;
+display: flex;
+flex-wrap: wrap;
+ }
+
+ .players{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 200px;   
+    box-shadow: 5px 10px 10px rgb(211, 78, 17);
+ }
